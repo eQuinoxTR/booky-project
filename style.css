@@ -1,0 +1,211 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .08px;
+    color: rgb(236, 229, 218);
+    font-size: 1.15rem;
+    caret-color: transparent;
+    color: rgb(236, 239, 244);
+}
+
+body {
+    background-color: rgb(60, 66, 82);
+    min-height: 100%;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: start;
+}
+
+.flexBottom {
+    display: flex;  
+    justify-content: center;
+    align-items: start;
+    background-color: rgb(78, 87, 104);
+    padding: 0px;
+    margin: 0px;
+    padding: 20px;
+    border-right: 1px rgb(67, 76, 94) solid;
+}
+.ui {
+    position: sticky;
+    top: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+.addBookBtn {
+    border: none;
+    color: rgb(159, 165, 183);
+    background-color: transparent;
+    padding: 0px 10px;
+    font-size: 2rem;
+    font-weight: 100;
+    border-radius: 10px;
+    transition: 250ms;
+}
+.addBookBtn:hover {
+    background-color: rgb(62, 67, 78);
+    color: rgb(190, 112, 124);
+    transition: 250ms;
+}
+.addBookBtn:active {
+    background-color: rgba(58, 70, 83, 0.61);
+}
+
+[src="./booky.png"] {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 5px;
+    filter: brightness(70%);
+}
+
+.booky {
+    font-size: .727rem;
+
+}
+
+.grid {
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: 250px 250px;
+    grid-auto-rows: 250px;
+    gap: 32px;
+    margin: 45px;
+}
+.gridChildren {
+    background-color: rgb(49, 49, 59);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.book {
+    font-size: 2rem;
+    font-weight: bolder;
+    align-self: center;
+    color: rgb(233, 121, 132);
+}
+
+.author {
+    font-size: 1.5rem;
+    color: rgb(140, 197, 218);
+    align-self: center;
+}
+
+.pages {
+    align-self: center;
+}
+
+.read {
+    color: rgb(58, 63, 90);
+    font-size: 1rem;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    flex-grow: 4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.deleteContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.delete {
+    align-self: flex-end;
+    height: 30px;
+    width: 30px;
+    padding-right: 40px;
+}
+
+.containCheckBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 5px;
+    background-color: rgb(159, 165, 183);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 7px;
+    flex-grow: 1;
+}
+
+
+
+.delete:hover {
+    filter: brightness(72%);
+}
+
+#popover {
+    border: none;
+    background-color: rgba(78, 87, 104, 0.815);
+    border-radius: 10px;
+    color: white;
+    padding: 25px;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        align-items: center;
+        input[type="text"], [type="number"] {
+            border-radius: 8px;
+            border: none;
+            padding: 6px;
+            background-color: rgba(183, 183, 196, 0.973);
+            font-weight: bolder;
+            color: white;
+            font-size: 1rem;
+        }
+
+        button {
+            border: none;
+            font-size: 1rem;
+            border-radius: 10px;
+            padding: 14px 20px;
+            background-color: rgb(40, 130, 248);
+            color: white;
+            font-weight: bolder;
+        }
+        button:active {
+            background-color: rgb(112, 207, 252);
+        }
+    }
+
+    form > div {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+    }
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(85, 93, 116);
+}
+
+input[type="checkbox"]:checked {
+    transition: 50ms;
+    background-color: rgb(216, 189, 252);
+    border: 3px solid rgb(60, 66, 82);
+    outline: 3.5px solid rgb(250, 234, 221);
+    color: white;
+}   

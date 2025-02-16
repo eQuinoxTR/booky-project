@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="flexBottom">
+        <div class="ui">
+            <div class="booky">BookyList</div>
+            <img src="./booky.png">
+            <button popovertarget="popover" class="addBookBtn">+</button>
+        </div>
+    </div>
+    <div id="popover" popover>
+        <form>
+            <div>Add new book to the list</div>
+            <div>
+                <label for="bookForm">Book</label>
+                <input type="text" id="bookForm">
+            </div>
+            <div>
+                <label for="authorForm">Author</label>
+                <input type="text" id="authorForm">
+            </div>
+            <div>
+                <label for="pagesForm">Pages</label>
+                <input type="number" id="pagesForm">
+            </div>
+            <div>
+                <input type="checkbox" id="button" class="readForm">
+                <label for="button">Read</label>
+            </div>
+            <button class="submit" type="submit">Add new book</button>
+        </form>
+    </div>
+
+    <div class="grid">
+        <!-- <div class="gridChildren">
+            <container class="containCheckBox">
+                <div class="read">read</div>
+                <input type="checkbox">
+            </container>
+            <container class="content">
+                <div class="book">book</div>
+                <div class="author">author</div>
+                <container class="deleteContent">
+                    <div class="pages">pages</div>
+                    <img src="./delete.png" class="delete">
+                </container>
+            </container>
+        </div> -->
+    </div>
+    <script src="code.js" defer></script>
+</body>
+</html>
